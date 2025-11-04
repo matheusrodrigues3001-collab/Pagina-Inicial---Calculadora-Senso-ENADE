@@ -17,6 +17,7 @@
         margin: 0;
         text-align: center;
         padding: 20px;
+        position: relative; /* Adicionado para posicionar o rodapé em relação ao body */
     }
 
     h1 {
@@ -52,6 +53,22 @@
     .button:hover {
         background-color: #a00046;
     }
+
+    /* Novo estilo para o rodapé */
+    .footer-container {
+        position: absolute;
+        bottom: 10px; /* Distância da parte inferior */
+        right: 10px; /* Distância da lateral direita */
+        text-align: right; /* Alinha o texto à direita dentro do container */
+        font-size: 10px; /* Tamanho da fonte menor */
+        color: #666;
+        line-height: 1.2; /* Espaçamento entre linhas mais apertado */
+    }
+
+    .footer-container a {
+        color: #CE0058;
+        text-decoration: none;
+    }
 </style>
 </head>
 <body>
@@ -70,13 +87,13 @@
     </a>
 </div>
 
-<footer style="margin-top: 5px; font-size: 7px; color: #666;">
+<div class="footer-container">
     <p>Criado por: Matheus Damica</p>
     <p>Em caso de dúvidas, entre em contato: 
-        <a href="mailto:matheus.conceicao@afya.com.br" style="color: #CE0058; text-decoration: none;">
+        <a href="mailto:matheus.conceicao@afya.com.br">
             matheus.conceicao@afya.com.br
         </a>
     </p>
-</footer>
+</div>
 </body>
 </html>
